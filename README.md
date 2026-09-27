@@ -1,10 +1,16 @@
-# Fashion MNIST Classification using CNN + ANN
+# 👕 Fashion MNIST Classification using CNN + ANN
 
 A deep learning project for classifying images from the Fashion-MNIST
+
 dataset using a Convolutional Neural Network (CNN) followed by an
+
 Artificial Neural Network (ANN) classification head.
 
-## Project Overview
+## 🔗 Live Demo
+
+[**Try the Fashion MNIST Classifier →**](https://neural-networks-project-mnist-fashion-dataset-cjiwabeyomp6cbjz.streamlit.app/)
+
+## 📌 Project Overview
 
 Fashion-MNIST contains 70,000 grayscale images of clothing items.
 
@@ -30,41 +36,59 @@ The dataset is divided into:
 - 60,000 training images
 - 10,000 test images
 
-## Model Architecture
+## 🧠 Model Architecture
 
 The model consists of three convolutional blocks followed by
+
 fully connected layers.
 
-### CNN Feature Extraction
+### 🔍 CNN Feature Extraction
 
 Conv2D (32 filters, 3×3)
+
 → Batch Normalization
+
 → ReLU
+
 → MaxPooling
+
 → Dropout
 
 Conv2D (64 filters, 3×3)
+
 → Batch Normalization
+
 → ReLU
+
 → MaxPooling
+
 → Dropout
 
 Conv2D (128 filters, 3×3)
+
 → Batch Normalization
+
 → ReLU
+
 → MaxPooling
+
 → Dropout
 
-### ANN Classification
+### 🔗 ANN Classification
 
 Flatten
+
 → Dense (128 neurons)
+
 → Batch Normalization
+
 → Dropout
+
 → Dense (10 neurons)
+
 → Softmax
 
-## Results
+## 📊 Results
 
 Test Loss:
 
@@ -74,7 +98,7 @@ Test Accuracy:
 
 90.21%
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - TensorFlow
@@ -83,7 +107,7 @@ Test Accuracy:
 - Pillow
 - Streamlit
 
-## Project Structure
+## 📁 Project Structure
 
 MNIST-Project/
 
@@ -111,7 +135,7 @@ MNIST-Project/
 
 └── .gitignore
 
-## Running the Application
+## ⚙️ Running the Application
 
 Create and activate the virtual environment:
 
@@ -131,7 +155,7 @@ streamlit run app.py
 
 The application will open in your browser.
 
-## Features
+## ✨ Features
 
 - Upload clothing images
 - Automatic image preprocessing
@@ -141,7 +165,7 @@ The application will open in your browser.
 - Class probability distribution
 - CNN + ANN architecture display
 
-## Model Input
+## 🖼️ Model Input
 
 The trained model expects:
 
@@ -154,13 +178,14 @@ The uploaded image is:
 3. Normalized to [0, 1]
 4. Converted to the required CNN input shape
 
-## Dataset
+## 📚 Dataset
 
 Fashion-MNIST dataset provided by Zalando Research.
 
-## Author
+## 👨‍💻 Author
 
 Ritabrata Mandal
 
 B.Tech Computer Science & Engineering
+
 NIT Durgapur
